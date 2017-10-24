@@ -6,7 +6,7 @@
 	    					</nav>
 	    				</div>
 						<div class="large-12 medium-12 columns">
-							<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+							<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. . All rights reserved.  <span class="copyRight"> Made with &hearts; by <a href="http://thinkupdesign.ca">Think Up!</a></span></p>
 						</div>
 					</div> <!-- end #inner-footer -->
 				</footer> <!-- end .footer -->
