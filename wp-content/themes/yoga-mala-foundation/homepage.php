@@ -27,6 +27,8 @@ Template Name: Homepage
 
 					</div>
 
+					<hr>
+
 					<div id="programs" class="row">
 
 						<!-- 1st col -->
@@ -38,29 +40,39 @@ Template Name: Homepage
 						<!-- 2nd col -->
 						<div class="large-4 medium-4 columns">
 
-							<div class="program">
-								<div class="pHeader">
-									<img class="thumb" src="<?php the_field('program_1_image');?>" />
-									<h3><?php the_field('program_1_title');?></h3>
-								</div>
-								<p><?php the_field('program_1_text');?></p>
-							</div>
+							<ul class="accordion" data-accordion>
 
-							<div class="program">
-								<div class="pHeader">
-									<img class="thumb" src="<?php the_field('program_2_image');?>" />
-									<h3><?php the_field('program_2_title');?></h3>
-								</div>
-								<p><?php the_field('program_2_text');?></p>
-							</div>
+								 <li class="accordion-item is-active" data-accordion-item>
+									<a href="#" class="accordion-title">
+										<img class="thumb" src="<?php the_field('program_1_image');?>" />
+										<h3><?php the_field('program_1_title');?></h3>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<p><?php the_field('program_1_text');?></p>
+									</div>
+								</li>
 
-							<div class="program">
-								<div class="pHeader">
-									<img class="thumb" src="<?php the_field('program_3_image');?>" />
-									<h3><?php the_field('program_3_title');?></h3>
-								</div>
-								<p><?php the_field('program_3_text');?></p>
-							</div>
+								<li class="accordion-item" data-accordion-item>
+									<a href="#" class="accordion-title">
+										<img class="thumb" src="<?php the_field('program_2_image');?>" />
+										<h3><?php the_field('program_2_title');?></h3>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<p><?php the_field('program_2_text');?></p>
+									</div>
+								</li>
+
+								<li class="accordion-item" data-accordion-item>
+									<a href="#" class="accordion-title">
+										<img class="thumb" src="<?php the_field('program_3_image');?>" />
+										<h3><?php the_field('program_3_title');?></h3>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<p><?php the_field('program_3_text');?></p>
+									</div>
+								</li>
+
+							</ul>
 
 						</div>
 
@@ -95,7 +107,7 @@ Template Name: Homepage
 
 					</div><!-- end #programs -->
 
-
+					<hr>
 
 
 				</main> <!-- end #main -->

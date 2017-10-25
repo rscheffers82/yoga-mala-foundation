@@ -110,7 +110,7 @@ ul#menu-main-1
 .mission
   font-size: 1.85rem
   width: 80%
-  margin: 4rem auto 4rem auto
+  margin: 5rem auto
   text-indent: 15px
   padding-left: 12rem
   img
@@ -120,21 +120,30 @@ ul#menu-main-1
     margin-top: -20px
 
 #programs
-  margin: 4rem 0
+  margin: 5rem 0
   float: left
-  .columns:first-of-type
+  .columns:first-of-type p
     font-size: 1.5rem
     line-height: 2rem
-  .pHeader
-    display: block
-    float: left
-    width: 100%
-    img
+  .program
+    background-color: #F5F5F5
+    padding: 1.5rem
+    margin-bottom: 2rem
+    .pHeader
+      display: block
       float: left
-      width: 40%
-    h3
-      float: right
-      width: 55%
+      width: 100%
+      margin-bottom: 2rem
+      img
+        float: left
+        width: 40%
+      h3
+        float: right
+        width: 55%
+        font-size: 2rem
+        line-height: 2.2rem
+  .program.active
+    background-color: $blue
 
 
 /*********************
