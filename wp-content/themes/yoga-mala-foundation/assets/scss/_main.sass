@@ -8,11 +8,14 @@
  *GENERAL STYLES
  *********************
 
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Raleway')
+
 $warmclay: #817066
 $green: #B0BC3F
 $blue: #5E8BAD
 
-
+body
+  font-family: 'Raleway', sans-serif
 
 
 /*********************
@@ -28,7 +31,7 @@ a, a:visited
  *H1, H2, H3, H4, H5 P STYLES
  *********************
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5
-  // Removing text decoration from all headline links
+  font-family: 'Lato', sans-serif
   a
     text-decoration: none
 
@@ -65,7 +68,7 @@ h5, .h5
 ul#menu-main-1
   margin-top: 2rem
   a
-    color:
+    color: $warmclay
 
 .off-canvas-list
   ul
@@ -77,6 +80,16 @@ ul#menu-main-1
 
     .dropdown
       margin-left: 20px
+
+/*********************
+ * HERO SECTIon
+ *********************
+
+.hero
+  height: 500px
+  background: url('../assets/images/hero.jpg')
+  background-size: cover
+  background-repeat: no-repeat
 
 /*********************
  *POSTS & CONTENT STYLES
@@ -440,6 +453,7 @@ ul#menu-main-1
 .footer
   clear: both
   margin-top: 1em
+  color: $medium-gray
 
 /*********************
  *FOUNDATION STYLES
