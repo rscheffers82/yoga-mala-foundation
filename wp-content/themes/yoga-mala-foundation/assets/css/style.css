@@ -6976,8 +6976,8 @@ ul#menu-main-1 a {
  ********************* */
 /* line 88, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .hero {
-  height: 500px;
-  background: url("../assets/images/hero.jpg");
+  height: 100vh;
+  background: url("../images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
