@@ -40,7 +40,7 @@ Template Name: Homepage
 
 							<div class="program">
 								<div class="pHeader">
-									<?php the_field('program_1_image');?>
+									<img class="thumb" src="<?php the_field('program_1_image');?>" />
 									<h3><?php the_field('progam_1_title');?></h3>
 								</div>
 								<p><?php the_field('program_1_text');?></p>
@@ -48,7 +48,7 @@ Template Name: Homepage
 
 							<div class="program">
 								<div class="pHeader">
-									<?php the_field('program_2_image');?>
+									<img class="thumb" src="<?php the_field('program_2_image');?>" />
 									<h3><?php the_field('progam_2_title');?></h3>
 								</div>
 								<p><?php the_field('program_2_text');?></p>
@@ -56,7 +56,7 @@ Template Name: Homepage
 
 							<div class="program">
 								<div class="pHeader">
-									<?php the_field('program_3_image');?>
+									<img class="thumb" src="<?php the_field('program_3_image');?>" />
 									<h3><?php the_field('progam_3_title');?></h3>
 								</div>
 								<p><?php the_field('program_3_text');?></p>
