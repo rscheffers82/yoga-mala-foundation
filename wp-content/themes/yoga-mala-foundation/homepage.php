@@ -40,7 +40,7 @@ Template Name: Homepage
 						<!-- 2nd col -->
 						<div class="large-4 medium-4 columns">
 
-							<ul class="accordion" data-accordion data-option="data-slide-speed: 400;">
+							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;">
 
 								 <li class="accordion-item is-active" data-accordion-item>
 									<a href="#" class="accordion-title">
@@ -79,29 +79,39 @@ Template Name: Homepage
 						<!-- 3rd col -->
 						<div class="large-4 medium-4 columns">
 
-							<div class="program">
-								<div class="pHeader">
-									<?php //the_field('program_4_image');?>
-									<h3><?php //the_field('progam_4_title');?></h3>
-								</div>
-								<p><?php// the_field('program_4_text');?></p>
-							</div>
+							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;">
 
-							<div class="program">
-								<div class="pHeader">
-									<?php //the_field('program_5_image');?>
-									<h3><?php //the_field('progam_5_title');?></h3>
-								</div>
-								<p><?php //the_field('program_5_text');?></p>
-							</div>
+								 <li class="accordion-item" data-accordion-item>
+									<a href="#" class="accordion-title">
+										<img class="thumb" src="<?php the_field('program_4_image');?>" />
+										<h3><?php the_field('program_4_title');?></h3>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<p><?php the_field('program_4_text');?></p>
+									</div>
+								</li>
 
-							<div class="program">
-								<div class="pHeader">
-									<?php //the_field('program_6_image');?>
-									<h3><?php //the_field('progam_6_title');?></h3>
-								</div>
-								<p><?php //the_field('program_6_text');?></p>
-							</div>
+								<li class="accordion-item" data-accordion-item>
+									<a href="#" class="accordion-title">
+										<img class="thumb" src="<?php the_field('program_5_image');?>" />
+										<h3><?php the_field('program_5_title');?></h3>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<p><?php the_field('program_5_text');?></p>
+									</div>
+								</li>
+
+								<li class="accordion-item" data-accordion-item>
+									<a href="#" class="accordion-title">
+										<img class="thumb" src="<?php the_field('program_6_image');?>" />
+										<h3><?php the_field('program_6_title');?></h3>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<p><?php the_field('program_6_text');?></p>
+									</div>
+								</li>
+
+							</ul>
 
 						</div>
 
