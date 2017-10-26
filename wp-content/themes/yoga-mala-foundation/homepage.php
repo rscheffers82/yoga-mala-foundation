@@ -126,10 +126,10 @@ Template Name: Homepage
 						</div>
 
 						<div class="large-7 medium-7 columns">
-							<img src="../images/heretobe.png" alt="Here to be"/>
-							<p><?php the_field('lululemon_text');?></p>
+							<img src="wp-content/themes/yoga-mala-foundation/assets/images/heretobe.png" alt="Here to be"/>
+							<p><?php the_field('lulu_text');?></p>
 
-							<img src="../images/naadalogo.png" alt="Naada Yoga"/>
+							<img src="wp-content/themes/yoga-mala-foundation/assets/images/naadalogo.png" alt="Naada Yoga"/>
 							<p><?php the_field('naada_text');?></p>
 
 						</div>
@@ -143,7 +143,7 @@ Template Name: Homepage
 						</div>
 
 						<div class="large-7 medium-7 columns">
-							<img src="../images/lole.png" alt="Lole"/>
+							<img src="wp-content/themes/yoga-mala-foundation/assets/images/lole.png" alt="Lole"/>
 						</div>
 
 					</div>
@@ -152,7 +152,7 @@ Template Name: Homepage
 
 					<div id="contact" class="row">
 						<h2>Get Involved</h2>
-						
+
 					</div>
 
 
