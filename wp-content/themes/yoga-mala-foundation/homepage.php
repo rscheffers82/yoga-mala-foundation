@@ -119,6 +119,42 @@ Template Name: Homepage
 
 					<hr>
 
+					<div id="partners" class="row">
+
+						<div class="large-5 medium-5 columns">
+							<h2><?php the_field('partners_title');?></h2>
+						</div>
+
+						<div class="large-7 medium-7 columns">
+							<img src="../images/heretobe.png" alt="Here to be"/>
+							<p><?php the_field('lululemon_text');?></p>
+
+							<img src="../images/naadalogo.png" alt="Naada Yoga"/>
+							<p><?php the_field('naada_text');?></p>
+
+						</div>
+
+					</div>
+
+					<div id="sponsors" class="row">
+
+						<div class="large-5 medium-5 columns">
+							<h2><?php the_field('sponsors_title');?></h2>
+						</div>
+
+						<div class="large-7 medium-7 columns">
+							<img src="../images/lole.png" alt="Lole"/>
+						</div>
+
+					</div>
+
+					<hr>
+
+					<div id="contact" class="row">
+						<h2>Get Involved</h2>
+						
+					</div>
+
 
 				</main> <!-- end #main -->
 
