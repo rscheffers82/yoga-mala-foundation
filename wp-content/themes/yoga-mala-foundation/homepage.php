@@ -40,7 +40,7 @@ Template Name: Homepage
 						<!-- 2nd col -->
 						<div class="large-4 medium-4 columns">
 
-							<ul class="accordion" data-accordion>
+							<ul class="accordion" data-accordion data-option="data-slide-speed: 400;">
 
 								 <li class="accordion-item is-active" data-accordion-item>
 									<a href="#" class="accordion-title">
