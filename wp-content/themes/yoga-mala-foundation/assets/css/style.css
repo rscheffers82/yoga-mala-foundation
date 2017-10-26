@@ -6894,7 +6894,7 @@ a.thumbnail image {
 /*********************
  *GENERAL STYLES
  ********************* */
-/* line 17, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 31, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -6902,7 +6902,7 @@ body {
 /*********************
  *LINK STYLES
  ********************* */
-/* line 26, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 40, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 a:link, a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
@@ -6910,12 +6910,12 @@ a:link, a:visited:link {
 /*********************
  *H1, H2, H3, H4, H5 P STYLES
  ********************* */
-/* line 33, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 47, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: 'Lato', sans-serif;
 }
 
-/* line 35, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 49, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none;
 }
@@ -6923,12 +6923,12 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
 /*********************
  *HEADER STYLES
  ********************* */
-/* line 52, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 66, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .header ul.off-canvas-list li {
   list-style: none;
 }
 
-/* line 55, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 69, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .logo a {
   width: 300px;
 }
@@ -6936,47 +6936,53 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
 /*********************
  *NAVIGATION STYLES
  ********************* */
-/* line 63, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 77, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .top-bar .title-area {
   z-index: 1;
 }
 
-/* line 65, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 79, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .top-bar .top-bar ul {
   background: transparent;
 }
 
-/* line 68, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 82, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 ul#menu-main-1 {
   margin-top: 2rem;
 }
 
-/* line 70, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 84, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 ul#menu-main-1 a {
   color: #817066;
 }
 
-/* line 74, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 88, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .off-canvas-list ul {
   margin-left: 0;
 }
 
-/* line 78, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 92, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .off-canvas-list ul li a {
   border-bottom: 0px;
 }
 
-/* line 81, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 95, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .off-canvas-list ul .dropdown {
   margin-left: 20px;
 }
 
 /*********************
- * HERO SECTIon
+ * HOMEPAGE
  ********************* */
-/* line 88, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 103, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+body.home hr {
+  width: 30%;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+/* line 107, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .hero {
-  height: 100vh;
+  height: 90vh;
   background: url("../images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -6984,7 +6990,7 @@ ul#menu-main-1 a {
   margin-bottom: 4rem;
 }
 
-/* line 95, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 114, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .hero .heroCTA {
   width: 80%;
   position: absolute;
@@ -6994,12 +7000,12 @@ ul#menu-main-1 a {
   text-align: center;
 }
 
-/* line 102, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 121, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .hero .heroCTA h1 {
   font-weight: bold;
 }
 
-/* line 104, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 123, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .hero .learn {
   position: absolute;
   bottom: 0;
@@ -7007,7 +7013,7 @@ ul#menu-main-1 a {
   color: #fff;
 }
 
-/* line 110, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 129, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .mission {
   font-size: 1.85rem;
   width: 80%;
@@ -7016,7 +7022,7 @@ ul#menu-main-1 a {
   padding-left: 12rem;
 }
 
-/* line 116, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 135, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .mission img {
   width: 450px;
   float: left;
@@ -7024,60 +7030,99 @@ ul#menu-main-1 a {
   margin-top: -20px;
 }
 
-/* line 122, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 141, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #programs {
   margin: 5rem 0;
   float: left;
 }
 
-/* line 125, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 144, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #programs .columns:first-of-type p {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-/* line 128, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 147, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #programs .accordion-item {
   background-color: #F5F5F5;
   padding: 1.5rem;
   margin-bottom: 2rem;
+  float: left;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  -ms-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
-/* line 132, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 156, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+#programs .accordion-item:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  top: -3px;
+}
+
+/* line 159, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #programs .accordion-item .accordion-title {
   float: left;
+  border: none;
+  padding: 0;
 }
 
-/* line 134, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 163, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+#programs .accordion-item .accordion-title:hover, #programs .accordion-item .accordion-title:focus {
+  background-color: transparent;
+}
+
+/* line 165, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+#programs .accordion-item .accordion-content {
+  float: left;
+  padding: 1.5rem 0 0 0;
+}
+
+/* line 168, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+#programs .accordion-item .accordion-content a {
+  color: #a0c1da;
+}
+
+/* line 170, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+#programs .accordion-item .accordion-content a:hover {
+  color: #fff;
+}
+
+/* line 172, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #programs .accordion-item img {
   float: left;
   width: 40%;
 }
 
-/* line 137, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 175, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #programs .accordion-item h3 {
   float: right;
   width: 55%;
-  font-size: 2rem;
-  line-height: 2.2rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
 }
 
-/* line 142, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 180, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #programs .accordion-item.is-active {
   background-color: #5E8BAD;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* line 144, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 183, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #programs .accordion-item.is-active .accordion-title {
   border: 0;
 }
 
-/* line 146, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 185, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #programs .accordion-item.is-active .accordion-title h3 {
   color: #fff;
 }
 
-/* line 148, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 187, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #programs .accordion-item.is-active .accordion-content {
   border: 0;
   background-color: #5E8BAD;
@@ -7087,43 +7132,43 @@ ul#menu-main-1 a {
 /*********************
  *POSTS & CONTENT STYLES
  ********************* */
-/* line 159, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 198, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #content #inner-content {
   padding: 1rem 0rem;
 }
 
-/* line 169, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 208, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .page-title .vcard {
   border: 0px;
   padding: 0px;
 }
 
-/* line 176, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 215, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .byline {
   color: #999;
 }
 
-/* line 183, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 222, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .entry-content img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 187, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 226, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .entry-content .alignleft, .entry-content img.alignleft {
   margin-right: 1.5em;
   display: inline;
   float: left;
 }
 
-/* line 192, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 231, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .entry-content .alignright, .entry-content img.alignright {
   margin-left: 1.5em;
   display: inline;
   float: right;
 }
 
-/* line 197, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 236, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .entry-content .aligncenter, .entry-content img.aligncenter {
   margin-right: auto;
   margin-left: auto;
@@ -7131,41 +7176,41 @@ ul#menu-main-1 a {
   clear: both;
 }
 
-/* line 203, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 242, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .entry-content video, .entry-content object {
   max-width: 100%;
   height: auto;
 }
 
-/* line 207, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 246, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .entry-content pre {
   background: #eee;
   border: 1px solid #cecece;
   padding: 10px;
 }
 
-/* line 212, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 251, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
 }
 
-/* line 218, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 257, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
 
-/* line 223, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 262, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
   text-align: center;
 }
 
-/* line 229, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 268, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .post-password-form input[type="submit"] {
   display: inline-block;
   vertical-align: middle;
@@ -7200,7 +7245,7 @@ ul#menu-main-1 a {
 /*********************
  *PAGE NAVI STYLES
  ********************* */
-/* line 259, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 298, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .page-navigation {
   margin-top: 1rem;
 }
@@ -7208,17 +7253,17 @@ ul#menu-main-1 a {
 /*********************
  *COMMENT STYLES
  ********************* */
-/* line 266, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 305, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #comments .commentlist {
   margin-left: 0px;
 }
 
-/* line 270, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 309, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #respond ul {
   margin-left: 0px;
 }
 
-/* line 274, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 313, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist li {
   position: relative;
   clear: both;
@@ -7228,62 +7273,62 @@ ul#menu-main-1 a {
   padding: 0.7335em 10px;
 }
 
-/* line 282, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 321, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
 
-/* line 285, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 324, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist li ul.children {
   margin: 0;
 }
 
-/* line 307, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 346, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
 
-/* line 310, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 349, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
 
-/* line 314, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 353, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist li:not(.depth-1) {
   margin-left: 10px;
   margin-top: 0;
   padding-bottom: 0;
 }
 
-/* line 355, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 394, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist .vcard {
   margin-left: 50px;
 }
 
-/* line 358, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 397, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
 
-/* line 364, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 403, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist .vcard time {
   float: right;
 }
 
-/* line 367, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 406, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
 
-/* line 371, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 410, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
 
-/* line 376, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 415, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -7292,14 +7337,14 @@ ul#menu-main-1 a {
   background: #fff;
 }
 
-/* line 394, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 433, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
 
-/* line 402, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 441, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .commentlist .comment-reply-link {
   float: right;
 }
@@ -7307,31 +7352,31 @@ ul#menu-main-1 a {
 /*********************
  *COMMENT FORM STYLES
  ********************* */
-/* line 415, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 454, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
 
-/* line 419, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 458, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .respond-form form {
   margin: 0.75em 0;
 }
 
-/* line 422, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 461, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
 
-/* line 427, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 466, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
 
-/* line 431, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 470, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -7342,7 +7387,7 @@ ul#menu-main-1 a {
   line-height: 1.5em;
 }
 
-/* line 440, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 479, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
@@ -7350,7 +7395,7 @@ ul#menu-main-1 a {
   background: #fff;
 }
 
-/* line 444, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 483, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -7364,7 +7409,7 @@ ul#menu-main-1 a {
   box-shadow: none;
 }
 
-/* line 453, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 492, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
@@ -7372,24 +7417,24 @@ ul#menu-main-1 a {
   min-width: 250px;
 }
 
-/* line 459, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 498, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
   height: 150px;
 }
 
-/* line 468, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 507, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
 
-/* line 479, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 518, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
-/* line 483, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 522, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -7397,12 +7442,12 @@ ul#menu-main-1 a {
 /*********************
  *SIDEBARS & ASIDES
  ********************* */
-/* line 496, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 535, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .widget ul {
   margin: 0;
 }
 
-/* line 499, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 538, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .widget ul li {
   list-style: none;
 }
@@ -7410,7 +7455,7 @@ ul#menu-main-1 a {
 /*********************
  *FOOTER STYLES
  ********************* */
-/* line 514, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 553, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .footer {
   clear: both;
   margin-top: 1em;
@@ -7423,7 +7468,7 @@ ul#menu-main-1 a {
 /*********************
  *PLUGIN STYLES
  ********************* */
-/* line 527, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 566, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 .gform_body ul {
   list-style: none outside none;
   margin: 0;
