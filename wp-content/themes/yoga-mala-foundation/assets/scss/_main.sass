@@ -107,10 +107,12 @@ body.home
   hr
     width: 30%
     border-bottom: 1px solid #e4e4e4
+  .hero
+    background: url('../images/heroLight.jpg')
+
 
 .hero
   height: 100vh
-  background: url('../images/heroLight.jpg')
   background-size: cover
   background-repeat: no-repeat
   position: relative
@@ -214,6 +216,15 @@ body.home
   margin: 0 0 5rem
   h2
     float: right
+
+
+/*********************
+ * DONATIONS
+ *********************
+
+body.page-template-donations
+  .hero
+    background: url('../images/donate-hero.jpg')
 
 
 /*********************
@@ -579,6 +590,20 @@ body.home
   clear: both
   margin-top: 1em
   color: $medium-gray
+  #inner-footer
+    nav
+      border-bottom: 1px solid #dfdfdf
+      margin-bottom: 1.25rem
+      padding-bottom: 1rem
+      ul li a
+        color: $medium-gray
+        position: relative
+        &:after
+          position: absolute
+          content: "/"
+          right: 0
+          bottom: 0
+
 
 /*********************
  *FOUNDATION STYLES
