@@ -27,7 +27,7 @@ Template Name: Donation page
 .right {
 	text-align: center;
 	position: absolute;
-	top: 8rem;
+	top: 8.5rem;
 }
 
 .right img {
@@ -42,7 +42,7 @@ Template Name: Donation page
 			<p><?php the_field('header_subline'); ?></p>
 		</div>
 		<div class="right">
-			Replace the image with Donorbox code
+			<!-- Replace the image with Donorbox code -->
 			<img src="http://ymf.wpengine.com/wp-content/uploads/2017/10/donorbox.jpg">
 		</div>
 
