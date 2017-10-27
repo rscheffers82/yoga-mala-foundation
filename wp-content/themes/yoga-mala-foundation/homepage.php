@@ -40,7 +40,7 @@ Template Name: Homepage
 						<!-- 2nd col -->
 						<div class="large-4 medium-4 columns">
 
-							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;">
+							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true">
 
 								 <li class="accordion-item is-active" data-accordion-item data-scrollreveal="enter left and move 10px over 0.75s and wait 1s">
 									<a href="#" class="accordion-title">
@@ -79,7 +79,7 @@ Template Name: Homepage
 						<!-- 3rd col -->
 						<div class="large-4 medium-4 columns">
 
-							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;">
+							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true">
 
 								 <li class="accordion-item" data-accordion-item data-scrollreveal="enter left and move 10px over 0.75s and wait 1.75s">
 									<a href="#" class="accordion-title">
@@ -151,7 +151,36 @@ Template Name: Homepage
 					<hr>
 
 					<div id="contact" class="row">
-						<h2>Get Involved</h2>
+
+						<h2><?php the_field('get_involved_title');?></h2>
+
+						<div class="large-7 large-offset-1 medium-7 columns">
+							<p><?php the_field('get_involved');?></p>
+						</div>
+
+						<div class="large-4 medium-4 columns">
+							<button class="button" type="button" data-toggle="contact-dropdown"><?php the_field('contact_button_text');?></button>
+							<div class="dropdown-pane" id="contact-dropdown" data-dropdown data-auto-focus="true">
+								 <?php
+								 	$contactform = get_field('contact_form');
+									echo do_shortcode($contactform);
+									?>
+								</div>
+						</div>
+
+					</div>
+
+					<hr>
+
+					<div id="donate" class="row">
+
+						<div class="large-6 large-offset-1 medium-6 columns">
+							<h2><?php the_field('donate_cta');?></h2>
+						</div>
+
+						<div class="large-5 medium-5 columns cta">
+							<a class="button large" href="/donate"><?php the_field('donate_button');?></a>
+						</div>
 
 					</div>
 

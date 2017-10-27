@@ -63,6 +63,10 @@ h4, .h4
 
 h5, .h5
 
+p
+  font-size: 1.5rem
+  line-height: 1.95rem
+
 /*********************
  *HEADER STYLES
  *********************
@@ -165,9 +169,6 @@ body.home
 #programs
   margin: 5rem 0
   float: left
-  .columns:first-of-type p
-    font-size: 1.5rem
-    line-height: 2rem
   .accordion-item
     background-color: #F5F5F5
     padding: 1.5rem
@@ -178,8 +179,8 @@ body.home
     top: 0
     transition: top ease 0.3s
     &:hover
-      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3)
-      top: -3px
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2)
+      top: -1px
       cursor: pointer
     .accordion-title
       float: left
@@ -190,6 +191,9 @@ body.home
     .accordion-content
       float: left
       padding: 1.5rem 0 0 0
+      p
+        font-size: 1.125rem
+        line-height: 1.45rem
       a
         color: #a0c1da
         &:hover
@@ -216,16 +220,29 @@ body.home
 
 #partners
   margin: 5rem 0 0
-  h2
-    float: right
+  img
+    margin: 1rem 0 2rem
+  p
+    margin-bottom: 3rem
 
 #sponsors
   margin: 0 0 5rem
-  h2
-    float: right
   img
     width: 150px
     margin-top: 2rem
+
+#partners, #sponsors
+  h2
+    float: right
+    margin-right: 2rem
+
+#contact
+  margin: 5rem 0
+
+#donate
+  margin: 5rem 0 8rem
+  h2
+    line-height: 3.5rem
 
 
 /*********************
@@ -623,6 +640,8 @@ body.page-template-donations
           content: "/"
           right: 0
           bottom: 0
+  .copyright
+    font-size: 1rem
   span.copyRight
     float: right
     a
