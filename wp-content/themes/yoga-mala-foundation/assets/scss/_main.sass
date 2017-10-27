@@ -36,6 +36,9 @@ body
 /*********************
  *LINK STYLES
  *********************
+a
+  +cssTransition(.3s)
+
 a, a:visited
   // Mobile tap color
   &:link
@@ -82,6 +85,10 @@ h5, .h5
 
 ul#menu-main-1
   margin-top: 2rem
+  li.donate a
+    background-color: $warmclay
+    color: #fff
+    border-radius: 5px 
   a
     color: $warmclay
     +cssTransition(.2s)
@@ -225,6 +232,15 @@ body.home
 body.page-template-donations
   .hero
     background: url('../images/donate-hero.jpg')
+
+.donation-header
+  h1
+    color: $darkclay
+    font-weight: bold
+    line-height: 4rem
+  p
+    color: $darkclay
+    font-size: 1.5rem
 
 
 /*********************
@@ -594,15 +610,23 @@ body.page-template-donations
     nav
       border-bottom: 1px solid #dfdfdf
       margin-bottom: 1.25rem
-      padding-bottom: 1rem
+      padding-bottom: 1.5rem
       ul li a
         color: $medium-gray
         position: relative
+        padding: 0 1.75rem 0 1.15rem
         &:after
           position: absolute
           content: "/"
           right: 0
           bottom: 0
+  span.copyRight
+    float: right
+    a
+      color: $medium-gray
+      &:hover
+        color: #717171
+
 
 
 /*********************
