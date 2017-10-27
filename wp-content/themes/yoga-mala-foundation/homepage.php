@@ -32,7 +32,7 @@ Template Name: Homepage
 					<div id="programs" class="row">
 
 						<!-- 1st col -->
-						<div class="large-4 medium-4 columns">
+						<div class="large-4 medium-4 columns" data-scrollreveal="enter left and move 10px over 0.75s">
 							<h2><?php the_field('programs_title');?></h2>
 							<p><?php the_field('programs_description');?></p>
 						</div>
@@ -42,7 +42,7 @@ Template Name: Homepage
 
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;">
 
-								 <li class="accordion-item is-active" data-accordion-item>
+								 <li class="accordion-item is-active" data-accordion-item data-scrollreveal="enter left and move 10px over 0.75s and wait 1s">
 									<a href="#" class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_1_image');?>" />
 										<h3><?php the_field('program_1_title');?></h3>
@@ -52,7 +52,7 @@ Template Name: Homepage
 									</div>
 								</li>
 
-								<li class="accordion-item" data-accordion-item>
+								<li class="accordion-item" data-accordion-item data-scrollreveal="enter left and move 10px over 0.75s and wait 1s">
 									<a href="#" class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_2_image');?>" />
 										<h3><?php the_field('program_2_title');?></h3>
@@ -62,7 +62,7 @@ Template Name: Homepage
 									</div>
 								</li>
 
-								<li class="accordion-item" data-accordion-item>
+								<li class="accordion-item" data-accordion-item data-scrollreveal="enter left and move 10px over 0.75s">
 									<a href="#" class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_3_image');?>" />
 										<h3><?php the_field('program_3_title');?></h3>
@@ -81,7 +81,7 @@ Template Name: Homepage
 
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;">
 
-								 <li class="accordion-item" data-accordion-item>
+								 <li class="accordion-item" data-accordion-item data-scrollreveal="enter left and move 10px over 0.75s and wait 1.75s">
 									<a href="#" class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_4_image');?>" />
 										<h3><?php the_field('program_4_title');?></h3>
@@ -91,17 +91,17 @@ Template Name: Homepage
 									</div>
 								</li>
 
-								<li class="accordion-item" data-accordion-item>
+								<li class="accordion-item" data-accordion-item data-scrollreveal="enter left and move 10px over 0.75s and wait 1.75s">
 									<a href="#" class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_5_image');?>" />
 										<h3><?php the_field('program_5_title');?></h3>
 									</a>
-									<div class="accordion-content" data-tab-content>
+									<div class="accordion-content" data-tab-content data-scrollreveal="enter left and move 10px over 0.75s">
 										<p><?php the_field('program_5_text');?></p>
 									</div>
 								</li>
 
-								<li class="accordion-item" data-accordion-item>
+								<li class="accordion-item" data-accordion-item data-scrollreveal="enter left and move 10px over 0.75s">
 									<a href="#" class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_6_image');?>" />
 										<h3><?php the_field('program_6_title');?></h3>
@@ -121,11 +121,11 @@ Template Name: Homepage
 
 					<div id="partners" class="row">
 
-						<div class="large-5 medium-5 columns">
+						<div class="large-5 medium-5 columns" data-scrollreveal="enter left and move 10px over 0.75s">
 							<h2><?php the_field('partners_title');?></h2>
 						</div>
 
-						<div class="large-7 medium-7 columns">
+						<div class="large-7 medium-7 columns" data-scrollreveal="enter left and move 10px over 0.75s and wait 1s">
 							<img src="wp-content/themes/yoga-mala-foundation/assets/images/heretobe.png" alt="Here to be"/>
 							<p><?php the_field('lulu_text');?></p>
 
@@ -138,11 +138,11 @@ Template Name: Homepage
 
 					<div id="sponsors" class="row">
 
-						<div class="large-5 medium-5 columns">
+						<div class="large-5 medium-5 columns" data-scrollreveal="enter left and move 10px over 0.75s">
 							<h2><?php the_field('sponsors_title');?></h2>
 						</div>
 
-						<div class="large-7 medium-7 columns">
+						<div class="large-7 medium-7 columns" data-scrollreveal="enter left and move 10px over 0.75s and wait 1s">
 							<img src="wp-content/themes/yoga-mala-foundation/assets/images/lole.png" alt="Lole"/>
 						</div>
 
