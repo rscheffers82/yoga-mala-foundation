@@ -159,7 +159,7 @@ Template Name: Homepage
 						</div>
 
 						<div class="large-4 medium-4 columns" data-scrollreveal="enter left and move 10px over 0.75s and wait 1.5s">
-							<button class="button" type="button" data-toggle="contact-dropdown"><?php the_field('contact_button_text');?></button>
+							<button class="button contact" type="button" data-toggle="contact-dropdown"><?php the_field('contact_button_text');?></button>
 							<div class="dropdown-pane" id="contact-dropdown" data-dropdown data-auto-focus="true">
 								 <?php
 								 	$contactform = get_field('contact_form');
@@ -174,11 +174,11 @@ Template Name: Homepage
 
 					<div id="donate" class="row" data-scrollReveal="over .75s">
 
-						<div class="large-6 large-offset-1 medium-6 columns">
+						<div class="large-7 large-offset-1 medium-6 columns">
 							<h2><?php the_field('donate_cta');?></h2>
 						</div>
 
-						<div class="large-5 medium-5 columns cta">
+						<div class="large-4 medium-5 columns cta">
 							<a class="button large" href="/donate"><?php the_field('donate_button');?></a>
 						</div>
 

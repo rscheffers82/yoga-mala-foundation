@@ -32,6 +32,25 @@ $darkclay: #695a52
 body
   font-family: 'Raleway', sans-serif
 
+.wpcf7-submit
+  background-color: $warmclay
+  color: #fff
+  text-transform: uppercase
+  padding: 0.85em 1em
+  font-size: 1rem
+  font-family: 'Raleway', sans-serif
+  border: 0
+  cursor: pointer
+  &:hover
+    background: #8c7e75
+
+.button.contact
+  background-color: #a2a2a2
+  text-transform: uppercase
+  &:hover
+    background-color: #8e8e8e
+
+
 
 /*********************
  *LINK STYLES
@@ -94,6 +113,13 @@ ul#menu-main-1
     color: #fff
     border-radius: 3px
     text-transform: uppercase
+    background: $warmclay url('/wp-content/themes/yoga-mala-foundation/assets/images/donate-symbol.png') no-repeat 8px center
+    background-size: 33px
+    padding-left: 47px
+    &:hover
+      background: #8c7e75 url('/wp-content/themes/yoga-mala-foundation/assets/images/donate-symbol.png') no-repeat 8px center
+      background-size: 33px
+      opacity: 1
   a
     color: $warmclay
     +cssTransition(.2s)
