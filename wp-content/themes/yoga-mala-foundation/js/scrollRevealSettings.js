@@ -6,8 +6,8 @@ window.sr = ScrollReveal( {
   duration: 750
 });
 
-sr.reveal('.mission', { origin: 'bottom'});
-sr.reveal('#contact', { origin: 'bottom'});
+//sr.reveal('.mission', { origin: 'bottom'});
+//sr.reveal('#contact', { origin: 'bottom'});
 
 /*
                        _ _ _____                      _   _
