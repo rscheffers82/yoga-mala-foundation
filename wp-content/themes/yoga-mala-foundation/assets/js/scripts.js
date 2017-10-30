@@ -34,6 +34,16 @@ jQuery(document).ready(function() {
   //     });
   // }
 
+  jQuery(document).foundation({
+    offcanvas : {
+        // Sets method in which offcanvas opens.
+        // [ move | overlap_single | overlap ]
+        open_method: 'move',
+        // Should the menu close when a menu link is clicked?
+        // [ true | false ]
+        close_on_click : true
+      }
+  });
 
   // ABout
   jQuery('ul#menu-main-1 li.about a, ul#menu-main-2 li.about a, ul#menu-main li.about a').click(function(e){

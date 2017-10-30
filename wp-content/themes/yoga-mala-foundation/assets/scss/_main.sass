@@ -740,4 +740,42 @@ body.page-template-donations
 
 
 
-//@include breakpoint(mobile down)
+@include breakpoint(mobile down)
+  body.home .hero
+    background-position: 32% -17%
+    .heroCTA
+      width: 80%
+      h1
+        font-size: 2rem
+        line-height: 2.5rem
+  .mission
+    font-size: 1.5rem
+    width: 100%
+    margin: 1rem auto 4rem
+    text-indent: 0
+    padding: 0 1rem
+    img
+      width: 100%
+      float: left
+      margin: 0 0 15px 0
+  #partners h2, #sponsors h2
+    float: left
+  #donate
+    margin: 6rem 0 4rem
+    .columns.cta
+      background: url('/wp-content/themes/yoga-mala-foundation/assets/images/downArrow.png') no-repeat 50% 13%
+      background-size: 70px
+      height: 250px
+      a.button.large
+        right: 19%
+  #menu-main-2 li
+    display: inline-block
+  .footer
+    #inner-footer nav
+      margin-bottom: 1rem
+      padding-bottom: 1rem
+    .copyright
+      line-height: 1.5rem
+      span.copyRight
+        float: none
+
