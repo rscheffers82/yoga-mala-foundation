@@ -2,7 +2,7 @@
 	 and a topbar for medium-up -->
 
 <div class="top-bar" id="top-bar-menu">
-	<div class="top-bar-right float-right show-for-small-only">
+	<div class="top-bar-right float-right show-for-mobile-down">
 		<ul class="menu">
 			<li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li>
 			<li><a data-toggle="off-canvas"><?php _e( 'Menu', 'jointswp' ); ?></a></li>

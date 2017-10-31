@@ -32,13 +32,13 @@ Template Name: Homepage
 					<div id="programs" class="row">
 
 						<!-- 1st col -->
-						<div class="large-4 medium-4 columns" data-scrollreveal="enter left and move 10px over 0.75s">
+						<div class="large-4 medium-6 columns" data-scrollreveal="enter left and move 10px over 0.75s">
 							<h2><?php the_field('programs_title');?></h2>
 							<p><?php the_field('programs_description');?></p>
 						</div>
 
 						<!-- 2nd col -->
-						<div class="large-4 medium-4 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
+						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
 
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true">
 
@@ -77,7 +77,7 @@ Template Name: Homepage
 						</div>
 
 						<!-- 3rd col -->
-						<div class="large-4 medium-4 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1.75s">
+						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1.75s">
 
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true">
 
@@ -174,11 +174,11 @@ Template Name: Homepage
 
 					<div id="donate" class="row" data-scrollReveal="over .75s">
 
-						<div class="large-7 large-offset-1 medium-6 columns">
+						<div class="large-7 large-offset-1 medium-7 columns">
 							<h2><?php the_field('donate_cta');?></h2>
 						</div>
 
-						<div class="large-4 medium-5 columns cta">
+						<div class="large-4 medium-4 columns cta">
 							<a class="button large" href="/donate"><?php the_field('donate_button');?></a>
 						</div>
 
