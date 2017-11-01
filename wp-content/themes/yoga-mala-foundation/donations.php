@@ -13,7 +13,7 @@ Template Name: Donation page
 			</div>
 			<div class="right">
 				<!-- Replace the image with Donorbox code -->
-				<img src="http://ymf.wpengine.com/wp-content/uploads/2017/10/donorbox.jpg">
+				<script src="https://donorbox.org/widget.js" type="text/javascript"></script><iframe src="https://donorbox.org/embed/yoga-mala-foundation" height="685px" width="100%" style="max-width:500px; min-width:310px; max-height:none!important" seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no"></iframe>
 			</div>
 
 		</div>
