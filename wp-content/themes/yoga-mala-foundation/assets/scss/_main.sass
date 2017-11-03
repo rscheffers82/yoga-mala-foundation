@@ -329,7 +329,7 @@ body.home
 body.page-template-donations
   .hero
     background: url('../images/donate-hero.jpg')
-    height: 500px
+    height: 800px
 
 .donation-header
   h1
@@ -729,9 +729,21 @@ body.page-template-donations
 
 
 
+
+
+
 /*********************
- *FOUNDATION STYLES
+ * DONORBOX STYLES
  *********************
+
+.tabs-header.basic-color-background
+  background-color: #817067
+
+.tabs-header .header-content .circles .circle i
+  color: #bdb1ab
+
+.tabs-header .header-content .display-amount
+  color: #525252
 
 /*********************
  *PLUGIN STYLES
@@ -813,12 +825,12 @@ body.page-template-donations
         &:hover
           opacity: .7
   body.home .hero
-    background-position: 32% -17%
+    background-position: 36% 0%
     .heroCTA
       width: 80%
       h1
         font-size: 2rem
-        line-height: 2.5rem
+        line-height: 2.3rem
   .mission
     font-size: 1.5rem
     width: 100%
@@ -852,9 +864,16 @@ body.page-template-donations
         float: none
   // donations
   .donation-header
+    position: relative
+    padding: 1rem
+    right: auto
+    left: auto
     .left
       width: 100%
+      padding: 1rem
+      float: left
     .right
       width: 100%
       position: relative
+      float: left
       top: 0

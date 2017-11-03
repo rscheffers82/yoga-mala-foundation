@@ -34,16 +34,16 @@ jQuery(document).ready(function() {
   //     });
   // }
 
-  jQuery(document).foundation({
-    offcanvas : {
-        // Sets method in which offcanvas opens.
-        // [ move | overlap_single | overlap ]
-        open_method: 'move',
-        // Should the menu close when a menu link is clicked?
-        // [ true | false ]
-        close_on_click : true
-      }
-  });
+  // jQuery(document).foundation({
+  //   offcanvas : {
+  //       // Sets method in which offcanvas opens.
+  //       // [ move | overlap_single | overlap ]
+  //       open_method: 'move',
+  //       // Should the menu close when a menu link is clicked?
+  //       // [ true | false ]
+  //       close_on_click : true
+  //     }
+  // });
 
   // ABout
   jQuery('ul#menu-main-1 li.about a, ul#menu-main-2 li.about a, ul#menu-main li.about a').click(function(e){
@@ -55,7 +55,7 @@ jQuery(document).ready(function() {
     });
 
     // Programs
-    jQuery('ul#menu-main-1 li.programs a, ul#menu-main-2 li.programs a').click(function(e){
+    jQuery('ul#menu-main-1 li.programs a, ul#menu-main-2 li.programs a, ul#menu-main li.programs a').click(function(e){
         e.preventDefault();
         console.log('clicked!');
         jQuery('html, body').animate({
@@ -64,7 +64,7 @@ jQuery(document).ready(function() {
       });
 
     // Partners
-    jQuery('ul#menu-main-1 li.partners a, ul#menu-main-2 li.partners a').click(function(e){
+    jQuery('ul#menu-main-1 li.partners a, ul#menu-main-2 li.partners a, ul#menu-main li a.partners').click(function(e){
         e.preventDefault();
         console.log('clicked!');
         jQuery('html, body').animate({
@@ -73,7 +73,7 @@ jQuery(document).ready(function() {
       });
 
     // Get Involved
-    jQuery('ul#menu-main-1 li.involve a, ul#menu-main-2 li.involve a').click(function(e){
+    jQuery('ul#menu-main-1 li.involve a, ul#menu-main-2 li.involve a, ul#menu-main li.involve a').click(function(e){
         e.preventDefault();
         console.log('clicked!');
         jQuery('html, body').animate({
