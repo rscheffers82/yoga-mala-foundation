@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
   // });
 
   // ABout
-  jQuery('ul#menu-homepage li.about a, ul#menu-homepage-1 li.about a, ul#menu-main li.about a').click(function(e){
+  jQuery('ul#menu-homepage-2 li.about a, ul#menu-homepage-1 li.about a, ul#menu-main li.about a').click(function(e){
       e.preventDefault();
       console.log('clicked!');
       jQuery('html, body').animate({
@@ -55,7 +55,7 @@ jQuery(document).ready(function() {
     });
 
     // Programs
-    jQuery('ul#menu-homepage li.programs a, ul#menu-homepage-1 li.programs a').click(function(e){
+    jQuery('ul#menu-homepage-2 li.programs a, ul#menu-homepage-1 li.programs a').click(function(e){
         e.preventDefault();
         console.log('clicked!');
         jQuery('html, body').animate({
@@ -64,7 +64,7 @@ jQuery(document).ready(function() {
       });
 
     // Partners
-    jQuery('ul#menu-homepage li.partners a, ul#menu-homepage-1 li.partners a').click(function(e){
+    jQuery('ul#menu-homepage-2 li.partners a, ul#menu-homepage-1 li.partners a').click(function(e){
         e.preventDefault();
         console.log('clicked!');
         jQuery('html, body').animate({
@@ -73,7 +73,7 @@ jQuery(document).ready(function() {
       });
 
     // Get Involved
-    jQuery('ul#menu-homepage li.involve a, ul#menu-homepage-1 li.involve a').click(function(e){
+    jQuery('ul#menu-homepage-2 li.involve a, ul#menu-homepage-1 li.involve a').click(function(e){
         e.preventDefault();
         console.log('clicked!');
         jQuery('html, body').animate({

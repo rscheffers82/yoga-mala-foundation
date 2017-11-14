@@ -4,7 +4,8 @@ register_nav_menus(
 	array(
 		'main-nav' => __( 'The Main Menu', 'jointswp' ), // Main nav in header
 		'homepage-main-nav' => __( 'Homepage Main Menu', 'jointswp' ),  // Main nav for homepage
-		'footer-links' => __( 'Footer Links', 'jointswp' ) // Secondary nav in footer
+		'footer-links' => __( 'Footer Links', 'jointswp' ), // Secondary nav in footer
+		'homepage-footer-links' => __( 'Homepage Footer Links', 'jointswp' ) // Secondary nav in footer for Homepage
 	)
 );
 
@@ -82,6 +83,18 @@ function joints_footer_links() {
     	'menu' => __( 'Footer Links', 'jointswp' ),   	// Nav name
     	'menu_class' => 'menu',      					// Adding custom nav class
     	'theme_location' => 'footer-links',             // Where it's located in the theme
+        'depth' => 0,                                   // Limit the depth of the nav
+    	'fallback_cb' => ''  							// Fallback function
+	));
+} /* End Footer Menu */
+
+// The Homepage Footer Menu
+function homepage_footer_links() {
+    wp_nav_menu(array(
+    	'container' => 'false',                         // Remove nav container
+    	'menu' => __( 'Homepage Footer Links', 'jointswp' ),   	// Nav name
+    	'menu_class' => 'menu',      					// Adding custom nav class
+    	'theme_location' => 'homepage-footer-links',             // Where it's located in the theme
         'depth' => 0,                                   // Limit the depth of the nav
     	'fallback_cb' => ''  							// Fallback function
 	));
