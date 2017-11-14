@@ -14,6 +14,12 @@
 		</ul>
 	</div>
 	<div class="top-bar-right show-for-medium">
-		<?php joints_top_nav(); ?>
+		<?php
+		if (is_page_template('homepage.php')) {
+				homepage_top_nav();
+		}
+		else {
+			joints_top_nav();
+		} ?>
 	</div>
 </div>

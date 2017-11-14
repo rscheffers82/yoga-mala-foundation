@@ -7573,12 +7573,12 @@ p {
 }
 
 /* line 109, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
-ul#menu-main-1 {
+ul#menu-homepage, ul#menu-other-pages-1 {
   margin-top: 2rem;
 }
 
 /* line 111, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
-ul#menu-main-1 li.donate a {
+ul#menu-homepage li.donate a, ul#menu-other-pages-1 li.donate a {
   background-color: #817066;
   color: #fff;
   border-radius: 3px;
@@ -7589,14 +7589,14 @@ ul#menu-main-1 li.donate a {
 }
 
 /* line 119, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
-ul#menu-main-1 li.donate a:hover {
+ul#menu-homepage li.donate a:hover, ul#menu-other-pages-1 li.donate a:hover {
   background: #8c7e75 url("/wp-content/themes/yoga-mala-foundation/assets/images/donate-symbol.png") no-repeat 8px center;
   background-size: 33px;
   opacity: 1;
 }
 
 /* line 123, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
-ul#menu-main-1 a {
+ul#menu-homepage a, ul#menu-other-pages-1 a {
   color: #817066;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -7606,7 +7606,7 @@ ul#menu-main-1 a {
 }
 
 /* line 126, /Users/Andrew/yoga-mala-foundation/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
-ul#menu-main-1 a:hover {
+ul#menu-homepage a:hover, ul#menu-other-pages-1 a:hover {
   opacity: 0.7;
 }
 
