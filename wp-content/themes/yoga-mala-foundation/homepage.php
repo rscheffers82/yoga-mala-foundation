@@ -43,6 +43,16 @@ Template Name: Homepage
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true">
 
 								<li class="accordion-item is-active" data-accordion-item>
+								 <a href="#" class="accordion-title">
+									 <img class="thumb" src="<?php the_field('program_7_image');?>" />
+									 <h3><?php the_field('program_7_title');?></h3>
+								 </a>
+								 <div class="accordion-content" data-tab-content>
+									 <p><?php the_field('program_7_text');?></p>
+								 </div>
+							 </li>
+
+								<li class="accordion-item" data-accordion-item>
 									<a href="#" class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_1_image');?>" />
 										<h3><?php the_field('program_1_title');?></h3>
@@ -62,6 +72,15 @@ Template Name: Homepage
 									</div>
 								</li>
 
+							</ul>
+
+						</div>
+
+						<!-- 3rd col -->
+						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1.75s">
+
+							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true">
+
 								<li class="accordion-item" data-accordion-item>
 									<a href="#" class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_3_image');?>" />
@@ -71,15 +90,6 @@ Template Name: Homepage
 										<p><?php the_field('program_3_text');?></p>
 									</div>
 								</li>
-
-							</ul>
-
-						</div>
-
-						<!-- 3rd col -->
-						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1.75s">
-
-							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true">
 
 								 <li class="accordion-item" data-accordion-item>
 									<a href="#" class="accordion-title">
@@ -113,6 +123,16 @@ Template Name: Homepage
 
 							</ul>
 
+							<button class="button" data-open="pastprojects"> <?php the_field('past_projects_link');?> »</button>
+
+						</div>
+
+						<!-- Past Project hidden in a reveal modal -->
+						<div class="small reveal" id="pastprojects" data-reveal>
+							<?php the_field('pastprojects');?>
+						  <button class="close-button" data-close aria-label="Close modal" type="button">
+						    <span aria-hidden="true">&times;</span>
+						  </button>
 						</div>
 
 					</div><!-- end #programs -->
