@@ -55,3 +55,20 @@ function url_login_logo(){
 		return get_bloginfo( 'wpurl' );
 }
 add_filter('login_headerurl', 'url_login_logo');
+
+// WPML Manually Menu siwtcher insert
+// add WPML Language Toggle Manually
+add_filter( 'wp_nav_menu_items', 'new_nav_menu_items',10,2 );
+function new_nav_menu_items($items,$args) {
+    if ( function_exists('icl_get_languages')  && $args->theme_location == 'homepage-main-nav' ) {
+        $languages = icl_get_languages('skip_missing=0');
+        if(1 < count($languages)){
+            foreach($languages as $l){
+                if(!$l['active']){
+                    $items .= '<li class="menu-item language"><a href="'.$l['url'].'">'. $l['native_name'] .'</a></li>';
+                }
+            }
+        }
+    }
+    return $items;
+}

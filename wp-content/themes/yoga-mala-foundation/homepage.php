@@ -43,16 +43,6 @@ Template Name: Homepage
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true">
 
 								<li class="accordion-item is-active" data-accordion-item>
-								 <a href="#" class="accordion-title">
-									 <img class="thumb" src="<?php the_field('program_7_image');?>" />
-									 <h3><?php the_field('program_7_title');?></h3>
-								 </a>
-								 <div class="accordion-content" data-tab-content>
-									 <p><?php the_field('program_7_text');?></p>
-								 </div>
-							 </li>
-
-								<li class="accordion-item" data-accordion-item>
 									<a href="#" class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_1_image');?>" />
 										<h3><?php the_field('program_1_title');?></h3>
@@ -146,10 +136,10 @@ Template Name: Homepage
 						</div>
 
 						<div class="large-7 medium-7 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait .5s">
-							<img src="wp-content/themes/yoga-mala-foundation/assets/images/heretobe.png" alt="Here to be"/>
+							<img src="https://yogamalafoundation.ca/wp-content/themes/yoga-mala-foundation/assets/images/heretobe.png" alt="Here to be"/>
 							<p><?php the_field('lulu_text');?></p>
 
-							<img src="wp-content/themes/yoga-mala-foundation/assets/images/naadalogo.png" alt="Naada Yoga"/>
+							<img src="https://yogamalafoundation.ca/wp-content/themes/yoga-mala-foundation/assets/images/naadalogo.png" alt="Naada Yoga"/>
 							<p><?php the_field('naada_text');?></p>
 
 						</div>
@@ -163,7 +153,7 @@ Template Name: Homepage
 						</div>
 
 						<div class="large-7 medium-7 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
-							<img src="wp-content/themes/yoga-mala-foundation/assets/images/lole.png" alt="Lole"/>
+							<img src="https://yogamalafoundation.ca/wp-content/themes/yoga-mala-foundation/assets/images/lole.png" alt="Lole"/>
 						</div>
 
 					</div>
@@ -199,7 +189,7 @@ Template Name: Homepage
 						</div>
 
 						<div class="large-4 medium-4 columns cta">
-							<a class="button large" href="/donate"><?php the_field('donate_button');?></a>
+							<a class="button large" href="<?php echo get_page_link(14); ?>"><?php the_field('donate_button');?></a>
 						</div>
 
 					</div>
