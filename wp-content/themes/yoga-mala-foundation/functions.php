@@ -60,7 +60,7 @@ add_filter('login_headerurl', 'url_login_logo');
 // add WPML Language Toggle Manually
 add_filter( 'wp_nav_menu_items', 'new_nav_menu_items',10,2 );
 function new_nav_menu_items($items,$args) {
-    if ( function_exists('icl_get_languages')  && $args->theme_location == 'homepage-main-nav' ) {
+    if ( function_exists('icl_get_languages')  && $args->theme_location == 'homepage-main-nav' || 'main-nav' ) {
         $languages = icl_get_languages('skip_missing=0');
         if(1 < count($languages)){
             foreach($languages as $l){
