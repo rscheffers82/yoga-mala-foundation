@@ -44,6 +44,16 @@ Template Name: Homepage
 
 								<li class="accordion-item is-active" data-accordion-item>
 									<a href="#" class="accordion-title">
+										<img class="thumb" src="<?php the_field('program_7_image');?>" />
+										<h3><?php the_field('program_7_title');?></h3>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<p><?php the_field('program_7_text');?></p>
+									</div>
+								</li>
+
+								<li class="accordion-item" data-accordion-item>
+									<a href="#" class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_1_image');?>" />
 										<h3><?php the_field('program_1_title');?></h3>
 									</a>
