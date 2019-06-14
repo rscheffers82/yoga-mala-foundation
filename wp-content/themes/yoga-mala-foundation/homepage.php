@@ -6,6 +6,9 @@ Template Name: Homepage
 
 <?php get_header(); ?>
 
+	<div class="introVideo">
+		<?php the_field('intro_video');?>
+	</div>
 	<div class="heroCTA">
 		<h1><?php the_field('hero_message'); ?></h1>
 	</div>

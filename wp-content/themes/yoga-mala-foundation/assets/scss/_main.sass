@@ -172,6 +172,11 @@ body.home
   background-repeat: no-repeat
   position: relative
   margin-bottom: 4rem
+  .introVideo
+    width: 40%
+    position: absolute
+    top: 25vh
+    left: 7vw
   .heroCTA
     width: 40%
     position: absolute
@@ -831,7 +836,25 @@ div.wpcf7-response-output
  * MOBILE/RESPONSIVE
  *********************
 
+@media screen and (max-width: 1200px)
+  ul#menu-main-1
+    li a
+      padding: .7rem .75rem !important
+
 @include breakpoint(medium down)
+  .top-bar
+    padding: 0
+    .top-bar-right.hide-for-large
+      width: 100%
+      background: #F4F4F4
+      padding: .5rem
+      display: block
+      ul.menu li a
+        color: $warmclay
+        padding: 0.5rem
+        font-weight: 700
+        &:hover
+          opacity: .7
   .logo a
     width: 250px
   ul#menu-main-1
@@ -841,10 +864,10 @@ div.wpcf7-response-output
   body.home .hero
     background-position: 24% 50%
     .heroCTA
-      width: 60%
+      width: 40%
       h1
-        line-height: 3.5rem
-        font-size: 3rem
+        line-height: 2.5rem
+        font-size: 2rem
     .learn
       color: #fff
       &:after
@@ -887,24 +910,19 @@ div.wpcf7-response-output
 
 
 @include breakpoint(mobile down)
-  .top-bar
-    padding: 0
-    .top-bar-right.show-for-mobile-down
-      background: #F4F4F4
-      padding: .5rem
-      display: block
-      ul.menu li a
-        color: $warmclay
-        padding: 0.5rem
-        &:hover
-          opacity: .7
   body.home .hero
     background-position: 36% 0%
-    .heroCTA
+    .introVideo, .heroCTA
       width: 80%
-      h1
-        font-size: 2rem
-        line-height: 2.3rem
+      position: relative
+      float: left
+      top: 2rem
+      left: 10%
+    .heroCTA h1
+      font-size: 2rem
+      line-height: 2.3rem
+      text-align: left
+      color: #fff
   .mission
     font-size: 1.5rem
     width: 100%
