@@ -6,8 +6,10 @@ and Foundation play nice together.
 
 jQuery(document).ready(function() {
 
-    // Remove empty P tags created by WP inside of Accordion and Orbit
-    jQuery('.accordion p:empty, .orbit p:empty').remove();
+  const $ = jQuery;
+
+  // Remove empty P tags created by WP inside of Accordion and Orbit
+  jQuery('.accordion p:empty, .orbit p:empty').remove();
 
 	 // Makes sure last grid item floats left
 	jQuery('.archive-grid .columns').last().addClass( 'end' );
@@ -85,6 +87,24 @@ jQuery(document).ready(function() {
 // CLose Off Canvas on Menu click (mobile)
   jQuery('.off-canvas a').on('click', function() {
       jQuery('.off-canvas').foundation('close');
+  });
+
+  $('.open-modal').click(function() {
+    const modal = $('#program-video-modal');
+    const videoHolder = $('.flex-video');
+    const { videoId } =  this.dataset;
+    const content = videoId 
+      ? '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/' + videoId + '?autoplay=1&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>'
+      : '<div style="padding:56.25% 0 0 0;position:relative; display: flex; justify-content: center; align-items: center;"><p>Unable to find video</p></div>';
+    $( videoHolder ).append(content);
+    $( modal ).foundation('open');
+  });
+  
+  $('.close-modal').on('click', function() {
+    const modal = $('#program-video-modal');
+    const videoHolder = $('.flex-video');
+    $( videoHolder ).find( 'div' ).remove();
+    $( modal ).foundation('close');
   });
 
 

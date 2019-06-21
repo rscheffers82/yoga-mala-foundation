@@ -38,6 +38,34 @@ Template Name: Homepage
 						<div class="large-4 medium-6 columns" data-scrollreveal="enter left and move 10px over 0.75s">
 							<h2><?php the_field('programs_title');?></h2>
 							<p><?php the_field('programs_description');?></p>
+							
+							<p>
+								<button class="button open-modal" data-video-id="342133424">video 1 - intro YMF</div>
+								<button class="button open-modal" data-video-id="342128752">video 2 - lady</div>
+								<button class="button open-modal">no video ID - modal</div>
+								<button class="button open-modal" data-video-id="43qdafdafdsa423423jklfdsfsd">incorrect video ID - modal</div>
+							</p>
+
+							<style>
+								.flex-video {
+									margin-top: 2rem;
+									padding-bottom: 56%;
+								}
+							</style>
+							<div class="reveal large" id="program-video-modal" data-reveal>
+								<button class="close-button close-modal" aria-label="Close modal" type="button">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div class="flex-video"></div>
+								<script src="https://player.vimeo.com/api/player.js"></script>								
+								<!-- <h1>Awesome. I Have It.</h1>
+								<p class="lead">Your couch. It is mine.</p>
+								<p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+								<button class="close-button" data-close aria-label="Close modal" type="button">
+									<span aria-hidden="true">&times;</span>
+								</button> -->
+							</div>
+
 						</div>
 
 						<!-- 2nd col -->

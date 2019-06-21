@@ -17,6 +17,9 @@ function site_scripts() {
     // Adding scroll Reveal settings file in the footer
     wp_enqueue_script( 'scroll-reveal-settings', get_template_directory_uri() . '/js/scrollRevealSettings.js', array( 'jquery', 'scroll-reveal'), '', true );
 
+    // Adding Reveal (modal) file in the footer
+    wp_enqueue_script( 'reveal', get_template_directory_uri() . '/vendor/foundation-sites/js/foundation.reveal.js', array('jquery', 'foundation-js'), '', true );
+
     // Register main stylesheet
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
 
