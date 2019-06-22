@@ -46,23 +46,6 @@ Template Name: Homepage
 								<button class="button open-modal" data-video-id="43qdafdafdsa423423jklfdsfsd">incorrect video ID - modal</div>
 							</p>
 
-							<style>
-								.flex-video {
-									margin-top: 2rem;
-									padding-bottom: 56%;
-								}
-							</style>
-							<div class="reveal large" id="program-video-modal" data-reveal>
-								<button class="close-button close-modal" aria-label="Close modal" type="button">
-									<span aria-hidden="true">&times;</span>
-								</button>
-								<div class="flex-video">
-									<iframe id="program-video-iframe" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-								</div>
-							</div>
-
-						</div>
-
 						<!-- 2nd col -->
 						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
 
@@ -236,5 +219,29 @@ Template Name: Homepage
 		</div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
+
+	<style>
+		.flex-video {
+			margin-top: 2rem;
+			padding-bottom: 56%;
+		}
+	</style>
+	<div class="reveal large" id="program-video-modal" data-reveal>
+		<button class="close-button close-modal" aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="flex-video">
+			<iframe id="program-video-iframe" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div class="reveal" id="error-modal" data-reveal>
+		<button class="close-button" aria-label="Close modal" data-close type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<p style="margin-top: 2rem; white-space: pre-wrap;"></p>
+	</div>
+</div>
+
 
 <?php get_footer(); ?>
