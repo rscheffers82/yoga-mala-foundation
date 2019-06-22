@@ -89,22 +89,45 @@ jQuery(document).ready(function() {
       jQuery('.off-canvas').foundation('close');
   });
 
+  let vimeoPlayer;
+  const initialVideoId = '342133424';
+  const playerLoaderId = setInterval(function() {
+    const iframe = document.querySelector('#program-video-iframe');
+    if (!iframe) return;
+    if (Vimeo) {
+      clearInterval(playerLoaderId);
+      iframe.src = 'https://player.vimeo.com/video/' + initialVideoId + '?byline=0&portrait=0';
+      vimeoPlayer = new Vimeo.Player('program-video-iframe');
+      console.log('loaded');
+    } else {
+      console.log('checking');
+    }
+  }, 10);
+
   $('.open-modal').click(function() {
+    if (!vimeoPlayer) {
+      return;
+    }
+
     const modal = $('#program-video-modal');
-    const videoHolder = $('.flex-video');
-    const { videoId } =  this.dataset;
-    const content = videoId 
-      ? '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/' + videoId + '?autoplay=1&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>'
-      : '<div style="padding:56.25% 0 0 0;position:relative; display: flex; justify-content: center; align-items: center;"><p>Unable to find video</p></div>';
-    $( videoHolder ).append(content);
+    const { videoId } = this.dataset;
+    vimeoPlayer.loadVideo(videoId)
+      .then(function(id) {
+        vimeoPlayer.play();
+      })
+      .catch(function(err) {
+        console.log('Unable to load or play video');
+      });
     $( modal ).foundation('open');
   });
   
   $('.close-modal').on('click', function() {
     const modal = $('#program-video-modal');
-    const videoHolder = $('.flex-video');
-    $( videoHolder ).find( 'div' ).remove();
     $( modal ).foundation('close');
+
+    if (vimeoPlayer) {
+      vimeoPlayer.unload();
+    }
   });
 
 

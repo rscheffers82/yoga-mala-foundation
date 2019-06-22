@@ -56,14 +56,9 @@ Template Name: Homepage
 								<button class="close-button close-modal" aria-label="Close modal" type="button">
 									<span aria-hidden="true">&times;</span>
 								</button>
-								<div class="flex-video"></div>
-								<script src="https://player.vimeo.com/api/player.js"></script>								
-								<!-- <h1>Awesome. I Have It.</h1>
-								<p class="lead">Your couch. It is mine.</p>
-								<p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-								<button class="close-button" data-close aria-label="Close modal" type="button">
-									<span aria-hidden="true">&times;</span>
-								</button> -->
+								<div class="flex-video">
+									<iframe id="program-video-iframe" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+								</div>
 							</div>
 
 						</div>
