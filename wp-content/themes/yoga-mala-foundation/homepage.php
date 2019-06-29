@@ -38,13 +38,7 @@ Template Name: Homepage
 						<div class="large-4 medium-6 columns" data-scrollreveal="enter left and move 10px over 0.75s">
 							<h2><?php the_field('programs_title');?></h2>
 							<p><?php the_field('programs_description');?></p>
-							
-							<p>
-								<button class="button open-modal" data-video-id="342133424">video 1 - intro YMF</div>
-								<button class="button open-modal" data-video-id="342128752">video 2 - lady</div>
-								<button class="button open-modal">no video ID - modal</div>
-								<button class="button open-modal" data-video-id="43qdafdafdsa423423jklfdsfsd">incorrect video ID - modal</div>
-							</p>
+						</div>
 
 						<!-- 2nd col -->
 						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
@@ -106,7 +100,13 @@ Template Name: Homepage
 										<h3><?php the_field('program_4_title');?></h3>
 									</a>
 									<div class="accordion-content" data-tab-content>
-										<p><?php the_field('program_4_text');?></p>
+										<p>
+											<button class="open-modal video-still-button" data-video-id="<?php the_field('program_4_video_id'); ?>">
+												<img class="video-image" src="<?php the_field('program_4_video_still'); ?>" alt="<?php the_field('program_4_title'); ?>">
+											</button>
+											<br><br>
+											<?php the_field('program_4_text');?>
+										</p>
 									</div>
 								</li>
 
@@ -224,6 +224,31 @@ Template Name: Homepage
 		.flex-video {
 			margin-top: 2rem;
 			padding-bottom: 56%;
+		}
+
+		.video-still-button {
+			position: relative;
+			transition: opacity .3s ease;
+		}
+
+		.video-still-button:hover {
+			cursor: pointer;
+			opacity: 0.75;
+		}
+
+		.video-still-button:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			content: ' ';
+		}
+
+		#programs .accordion-item .video-image {
+			width: 100%;
+			height: auto;
+			float: none;
 		}
 	</style>
 	<div class="reveal large" id="program-video-modal" data-reveal>
