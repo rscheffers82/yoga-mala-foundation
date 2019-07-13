@@ -1,11 +1,11 @@
 <?php
 /*
-Template Name: Homepage Dev
+Template Name: Homepage dev
 */
 ?>
 
 <?php 
-	$homepageId = '';
+	$homepageId = '7';
 ?>
 
 <?php get_header(); ?>
@@ -38,34 +38,30 @@ Template Name: Homepage Dev
 
 					<div id="programs" class="row">
 
-						<!-- 1st col -->
-						<div class="large-4 medium-6 columns" data-scrollreveal="enter left and move 10px over 0.75s">
+						<!-- Text above the programs -->
+						<div class="columns small-12">
 							<h2><?php the_field('programs_title', $homepageId);?></h2>
 							<p><?php the_field('programs_description', $homepageId);?></p>
+							<br>
 						</div>
 
-						<!-- 2nd col -->
-						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
+						<!-- 1st col -->
+						<div class="large-4 medium-6 columns" data-scrollreveal="enter top and move 10px over 0.75s and wait 0.25s">
+							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
 
-							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true">
-
-								<li class="accordion-item is-active" data-accordion-item>
-									<a href="#" class="accordion-title">
-										<img class="thumb" src="<?php the_field('program_7_image', $homepageId); ?>" />
-										<h3><?php the_field('program_7_title', $homepageId); ?></h3>
+								<li class="accordion-item is-active">
+									<a class="accordion-title">
+										<button class="open-modal video-still-button" data-video-id="<?php the_field('program_1_video_id', $homepageId); ?>">
+											<img class="video-image" src="<?php the_field('program_1_video_still', $homepageId); ?>" alt="<?php the_field('program_1_title', $homepageId); ?>">
+										</button>
 									</a>
 									<div class="accordion-content" data-tab-content>
-										<p><?php the_field('program_7_text', $homepageId); ?></p>
-									</div>
-								</li>
-
-								<li class="accordion-item" data-accordion-item>
-									<a href="#" class="accordion-title">
-										<img class="thumb" src="<?php the_field('program_1_image', $homepageId); ?>" />
-										<h3><?php the_field('program_1_title', $homepageId);?></h3>
-									</a>
-									<div class="accordion-content" data-tab-content>
-										<p><?php the_field('program_1_text', $homepageId);?></p>
+										<div style="display: flex; justify-content: space-between;">
+											<img class="thumb" src="<?php the_field('program_1_image', $homepageId);?>" />
+											<h3><?php the_field('program_1_title', $homepageId);?></h3>
+										</div>
+										<br>
+										<?php the_field('program_1_text', $homepageId);?>
 									</div>
 								</li>
 
@@ -80,13 +76,63 @@ Template Name: Homepage Dev
 								</li>
 
 							</ul>
+						</div>
+
+						<!-- 2nd col -->
+						<div class="large-4 medium-6 columns" data-scrollreveal="enter top and move 10px over 0.75s and wait 1s">
+
+							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
+
+							<li class="accordion-item is-active">
+									<a class="accordion-title">
+										<button class="open-modal video-still-button" data-video-id="<?php the_field('program_4_video_id', $homepageId); ?>">
+											<img class="video-image" src="<?php the_field('program_4_video_still', $homepageId); ?>" alt="<?php the_field('program_4_title', $homepageId); ?>">
+										</button>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<div style="display: flex; justify-content: space-between;">
+											<img class="thumb" src="<?php the_field('program_4_image', $homepageId);?>" />
+											<h3><?php the_field('program_4_title', $homepageId);?></h3>
+										</div>
+										<br>
+										<?php the_field('program_4_text', $homepageId);?>
+									</div>
+								</li>
+
+								<li class="accordion-item" data-accordion-item>
+									<a href="#" class="accordion-title">
+										<img class="thumb" src="<?php the_field('program_7_image', $homepageId); ?>" />
+										<h3><?php the_field('program_7_title', $homepageId); ?></h3>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<p><?php the_field('program_7_text', $homepageId); ?></p>
+									</div>
+								</li>
+
+							</ul>
 
 						</div>
 
 						<!-- 3rd col -->
-						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1.75s">
+						<div class="large-4 medium-6 columns" data-scrollreveal="enter top and move 10px over 0.75s and wait 1.75s">
 
-							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true">
+							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
+
+							<li class="accordion-item is-active">
+									<a class="accordion-title">
+										<button class="open-modal video-still-button" data-video-id="<?php the_field('program_5_video_id', $homepageId); ?>">
+											<img class="video-image" src="<?php the_field('program_5_video_still', $homepageId); ?>" alt="<?php the_field('program_5_title', $homepageId); ?>">
+										</button>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<div style="display: flex; justify-content: space-between;">
+											<img class="thumb" src="<?php the_field('program_5_image', $homepageId);?>" />
+											<h3><?php the_field('program_5_title', $homepageId);?></h3>
+										</div>
+										<br>
+										<?php the_field('program_5_text', $homepageId);?>
+									</div>
+								</li>
 
 								<li class="accordion-item" data-accordion-item>
 									<a href="#" class="accordion-title">
@@ -95,32 +141,6 @@ Template Name: Homepage Dev
 									</a>
 									<div class="accordion-content" data-tab-content>
 										<p><?php the_field('program_3_text', $homepageId);?></p>
-									</div>
-								</li>
-
-								 <li class="accordion-item" data-accordion-item>
-									<a href="#" class="accordion-title">
-										<img class="thumb" src="<?php the_field('program_4_image', $homepageId);?>" />
-										<h3><?php the_field('program_4_title', $homepageId);?></h3>
-									</a>
-									<div class="accordion-content" data-tab-content>
-										<p>
-											<button class="open-modal video-still-button" data-video-id="<?php the_field('program_4_video_id', $homepageId); ?>">
-												<img class="video-image" src="<?php the_field('program_4_video_still', $homepageId); ?>" alt="<?php the_field('program_4_title', $homepageId); ?>">
-											</button>
-											<br><br>
-											<?php the_field('program_4_text', $homepageId);?>
-										</p>
-									</div>
-								</li>
-
-								<li class="accordion-item" data-accordion-item>
-									<a href="#" class="accordion-title">
-										<img class="thumb" src="<?php the_field('program_5_image', $homepageId);?>" />
-										<h3><?php the_field('program_5_title', $homepageId);?></h3>
-									</a>
-									<div class="accordion-content" data-tab-content>
-										<p><?php the_field('program_5_text', $homepageId);?></p>
 									</div>
 								</li>
 
@@ -253,6 +273,10 @@ Template Name: Homepage Dev
 			width: 100%;
 			height: auto;
 			float: none;
+		}
+
+		.accordion-content img {
+			align-self: flex-start;
 		}
 	</style>
 	<div class="reveal large" id="program-video-modal" data-reveal>
