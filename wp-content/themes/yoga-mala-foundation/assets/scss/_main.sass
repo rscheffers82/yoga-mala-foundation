@@ -173,20 +173,33 @@ body.home
   position: relative
   margin-bottom: 4rem
   .introVideo
-    width: 40%
+    width: 50%
     position: absolute
-    top: 25vh
-    left: 7vw
+    top: 20vh
+    left: 3vw
   .heroCTA
-    width: 40%
+    width: 23%
     position: absolute
     top: 25vh
-    right: 10vw
+    right: 12vw
     color: $darkclay
-    text-align: right
+    text-align: left
+    &:before
+      content: ""
+      position: absolute
+      height: 20px
+      width: 70px
+      left: -60px
+      top: 43px
+      opacity: .5
+      background: url(../images/downArrowDarker.png) no-repeat top left
+      background-size: contain
+      -webkit-transform: rotate(90deg)
+      transform: rotate(90deg)
     h1
       font-weight: bold
-      line-height: 4rem
+      line-height: 3.25rem
+      font-size: 2.75rem
   .learn
     position: absolute
     bottom: 12vh
@@ -841,7 +854,27 @@ div.wpcf7-response-output
     li a
       padding: .7rem .75rem !important
 
-@include breakpoint(medium down)
+@include breakpoint(large only)
+  .hero
+    .introVideo
+      width: 75%
+      position: absolute
+      top: 34vh
+      left: 13vw
+    .heroCTA
+      width: 75%
+      left: 13vw
+      top: 28vh
+      text-align: center
+      &:before
+        height: 20px
+        width: 60px
+        top: 50px
+        opacity: .5
+        -webkit-transform: rotate(0)
+        left: 45%
+
+@include breakpoint(medium only)
   .top-bar
     padding: 0
     .top-bar-right.hide-for-large
@@ -863,11 +896,23 @@ div.wpcf7-response-output
       padding: .7rem .5rem
   body.home .hero
     background-position: 24% 50%
+    .introVideo
+      width: 75%
+      position: absolute
+      top: 34vh
+      left: 13vw
     .heroCTA
-      width: 40%
-      h1
-        line-height: 2.5rem
-        font-size: 2rem
+      width: 75%
+      left: 13vw
+      top: 28vh
+      text-align: center
+      &:before
+        height: 20px
+        width: 60px
+        top: 60px
+        opacity: .5
+        -webkit-transform: rotate(0)
+        left: 45%
     .learn
       color: #fff
       &:after
@@ -905,11 +950,20 @@ div.wpcf7-response-output
       line-height: 2.5rem
       font-size: 2.25rem
 
-
-
-
-
 @include breakpoint(mobile down)
+  .top-bar
+    padding: 0
+    .top-bar-right.hide-for-large
+      width: 100%
+      background: #F4F4F4
+      padding: .5rem
+      display: block
+      ul.menu li a
+        color: $warmclay
+        padding: 0.5rem
+        font-weight: 700
+        &:hover
+          opacity: .7
   body.home .hero
     background-position: 36% 0%
     .introVideo, .heroCTA
@@ -918,11 +972,17 @@ div.wpcf7-response-output
       float: left
       top: 2rem
       left: 10%
-    .heroCTA h1
-      font-size: 2rem
-      line-height: 2.3rem
-      text-align: left
-      color: #fff
+    .heroCTA
+      h1
+        font-size: 1.75rem
+        line-height: 2.3rem
+      &:before
+        height: 20px
+        width: 45px
+        top: 45px
+        opacity: .5
+        -webkit-transform: rotate(0)
+        left: 43%
   .mission
     font-size: 1.5rem
     width: 100%
