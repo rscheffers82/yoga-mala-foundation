@@ -47,7 +47,7 @@ Template Name: Homepage
 
 					<div class="programs row">
 						<!-- First Col -->
-						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
+						<div class="large-4 medium-12 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
 
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
 								<li class="accordion-item is-active">
@@ -57,7 +57,7 @@ Template Name: Homepage
 										</button>
 									</a>
 									<div class="accordion-content" data-tab-content>
-										<div style="display: flex; justify-content: space-between;">
+										<div class="image-title-wrapper">
 											<img class="thumb" src="<?php the_field('program_1_image');?>" />
 											<h3><?php the_field('program_1_title');?></h3>
 										</div>
@@ -79,7 +79,7 @@ Template Name: Homepage
 										</button>
 									</a>
 									<div class="accordion-content" data-tab-content>
-										<div style="display: flex; justify-content: space-between;">
+										<div class="image-title-wrapper">
 											<img class="thumb" src="<?php the_field('program_2_image');?>" />
 											<h3><?php the_field('program_2_title');?></h3>
 										</div>
@@ -100,7 +100,7 @@ Template Name: Homepage
 										</button>
 									</a>
 									<div class="accordion-content" data-tab-content>
-										<div style="display: flex; justify-content: space-between;">
+										<div class="image-title-wrapper">
 											<img class="thumb" src="<?php the_field('program_3_image');?>" />
 											<h3><?php the_field('program_3_title');?></h3>
 										</div>
@@ -117,7 +117,7 @@ Template Name: Homepage
 						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
 								<li class="accordion-item" data-accordion-item>
-									<a href="#" class="accordion-title">
+									<a class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_4_image');?>" />
 										<h3><?php the_field('program_4_title');?></h3>
 									</a>
@@ -127,7 +127,7 @@ Template Name: Homepage
 								</li>
 
 								<li class="accordion-item" data-accordion-item>
-									<a href="#" class="accordion-title">
+									<a class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_5_image');?>" />
 										<h3><?php the_field('program_5_title');?></h3>
 									</a>
@@ -141,7 +141,7 @@ Template Name: Homepage
 						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
 								<li class="accordion-item" data-accordion-item>
-									<a href="#" class="accordion-title">
+									<a class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_6_image');?>" />
 										<h3><?php the_field('program_6_title');?></h3>
 									</a>
@@ -150,7 +150,7 @@ Template Name: Homepage
 									</div>
 								</li>
 								<li class="accordion-item" data-accordion-item>
-									<a href="#" class="accordion-title">
+									<a class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_7_image');?>" />
 										<h3><?php the_field('program_7_title');?></h3>
 									</a>
@@ -163,8 +163,9 @@ Template Name: Homepage
 
 						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
-								<li class="accordion-item" data-accordion-item>
-									<a href="#" class="accordion-title">
+								
+							<li class="accordion-item" data-accordion-item>
+									<a class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_8_image');?>" />
 										<h3><?php the_field('program_8_title');?></h3>
 									</a>
@@ -173,7 +174,17 @@ Template Name: Homepage
 									</div>
 								</li>
 
-								<li class="cell large-4 medium-6 small-12  cell large-4 medium-6 small-12" data-accordion-item>
+								<li class="accordion-item" data-accordion-item>
+									<a class="accordion-title">
+										<img class="thumb" src="<?php the_field('program_9_image');?>" />
+										<h3><?php the_field('program_9_title');?></h3>
+									</a>
+									<div class="accordion-content" data-tab-content>
+										<p><?php the_field('program_9_text');?></p>
+									</div>
+								</li>
+
+								<li class="large-4 medium-12">
 									<button class="button" data-open="pastprojects"> <?php the_field('past_projects_link');?> »</button>
 								</li>
 							</ul>
@@ -278,6 +289,36 @@ Template Name: Homepage
 		<p style="margin-top: 2rem; white-space: pre-wrap;"></p>
 	</div>
 </div>
+<style>
+	div.programs .accordion-item.is-active .accordion-content {
+		cursor: default;
+    margin: 0rem -1.5rem -1.5rem;
+    padding: 1rem 1.5rem;
+	}
 
+	.video-still-button {
+			position: relative;
+			transition: opacity .3s ease;
+		}
+
+		.video-still-button:hover {
+			cursor: pointer;
+			opacity: 0.75;
+		}
+
+		.video-still-button:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			content: ' ';
+		}
+
+		.image-title-wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+</style>
 
 <?php get_footer(); ?>
