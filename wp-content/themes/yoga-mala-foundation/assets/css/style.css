@@ -8410,17 +8410,11 @@ div.programs .accordion-item .accordion-title .video-still-button:before {
 }
 
 /* line 281, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
-div.programs .accordion-item .accordion-title .image-title-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 284, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 div.programs .accordion-item .video-image {
   width: 100%;
 }
 
-/* line 286, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 283, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 div.programs .accordion-item .accordion-content {
   float: left;
   cursor: default;
@@ -8428,20 +8422,26 @@ div.programs .accordion-item .accordion-content {
   padding: 1rem 1.5rem;
 }
 
-/* line 291, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 288, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 div.programs .accordion-item .accordion-content p {
   font-size: 1.125rem;
   line-height: 1.45rem;
 }
 
-/* line 294, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 291, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 div.programs .accordion-item .accordion-content a {
   color: #a0c1da;
 }
 
-/* line 296, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+/* line 293, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
 div.programs .accordion-item .accordion-content a:hover {
   color: #fff;
+}
+
+/* line 295, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
+div.programs .accordion-item .accordion-content .image-title-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* line 298, C:/d-data/Freelance/8. Yoga Mala Foundation/Wordpress/wp-content/themes/yoga-mala-foundation/assets/scss/_main.sass */
