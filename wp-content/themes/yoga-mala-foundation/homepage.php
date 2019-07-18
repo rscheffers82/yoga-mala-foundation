@@ -289,36 +289,4 @@ Template Name: Homepage
 		<p style="margin-top: 2rem; white-space: pre-wrap;"></p>
 	</div>
 </div>
-<style>
-	div.programs .accordion-item.is-active .accordion-content {
-		cursor: default;
-    margin: 0rem -1.5rem -1.5rem;
-    padding: 1rem 1.5rem;
-	}
-
-	.video-still-button {
-			position: relative;
-			transition: opacity .3s ease;
-		}
-
-		.video-still-button:hover {
-			cursor: pointer;
-			opacity: 0.75;
-		}
-
-		.video-still-button:before {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			content: ' ';
-		}
-
-		.image-title-wrapper {
-			display: flex;
-			justify-content: space-between;
-		}
-</style>
-
 <?php get_footer(); ?>
