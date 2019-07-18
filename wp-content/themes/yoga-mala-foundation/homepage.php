@@ -47,7 +47,7 @@ Template Name: Homepage
 
 					<div class="programs row">
 						<!-- First Col -->
-						<div class="large-4 medium-12 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
+						<div class="large-4 medium-12 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait .5s">
 
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
 								<li class="accordion-item is-active">
@@ -91,7 +91,7 @@ Template Name: Homepage
 						</div><!-- End Second col -->
 
 						<!-- Third col-->
-						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
+						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1.5s">
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
 								<li class="accordion-item is-active">
 									<a class="accordion-title">
@@ -114,7 +114,7 @@ Template Name: Homepage
 
 					<!-- Programs without Video row -->
 					<div class="programs no-video row">
-						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
+						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 0.5s">
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
 								<li class="accordion-item" data-accordion-item>
 									<a class="accordion-title">
@@ -161,7 +161,7 @@ Template Name: Homepage
 							</ul>
 						</div>
 
-						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1s">
+						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1.5s">
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
 								
 							<li class="accordion-item" data-accordion-item>
