@@ -7,6 +7,8 @@ Template Name: Homepage
 
 <?php get_header(); ?>
 
+<?php echo do_shortcode("[sg_popup id=341]");?>
+
 	<div class="heroCTA">
 		<h1><?php the_field('hero_message'); ?></h1>
 	</div>
@@ -163,7 +165,7 @@ Template Name: Homepage
 
 						<div class="large-4 medium-6 columns" data-scrollreveal="enter right and move 10px over 0.75s and wait 1.5s">
 							<ul class="accordion" data-accordion data-options="data-slide-speed: 400;" data-allow-all-closed="true" data-multi-expand="true">
-								
+
 							<li class="accordion-item" data-accordion-item>
 									<a class="accordion-title">
 										<img class="thumb" src="<?php the_field('program_8_image');?>" />
